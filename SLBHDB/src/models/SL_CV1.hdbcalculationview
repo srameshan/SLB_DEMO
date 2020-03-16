@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Calculation:scenario xmlns:Calculation="http://www.sap.com/ndb/BiModelCalculation.ecore" id="SLB_DEMO.SLBHDB.models::SL_CV1" applyPrivilegeType="NONE" dataCategory="DIMENSION" dimensionType="STANDARD" schemaVersion="3.0" outputViewType="Projection" cacheInvalidationPeriod="NONE" enforceSqlExecution="false">
+<Calculation:scenario xmlns:Calculation="http://www.sap.com/ndb/BiModelCalculation.ecore" id="SLB_DEMO.SLBHDB.models::SL_CV1" applyPrivilegeType="NONE" dataCategory="CUBE" dimensionType="STANDARD" schemaVersion="3.0" outputViewType="Aggregation" cacheInvalidationPeriod="NONE" enforceSqlExecution="false">
 <descriptions defaultDescription="SL_CV1"/>
 <localVariables/>
 <variableMappings/>
@@ -32,16 +32,16 @@
       <keyMapping columnObjectName="SCARR" columnName="URL"/>
     </attribute>
   </attributes>
-  <calculatedAttributes>
-    <calculatedAttribute id="VALUE" order="6" semanticType="empty" displayAttribute="false" attributeHierarchyActive="false">
-      <keyCalculation datatype="INTEGER" expressionLanguage="SQL">
-        <formula>100</formula>
-      </keyCalculation>
-      </calculatedAttribute>
-  </calculatedAttributes>
+  <calculatedAttributes/>
   <baseMeasures/>
-  <calculatedMeasures/>
+  <calculatedMeasures>
+    <measure id="VALUE" order="6" aggregationType="sum" measureType="simple" datatype="INTEGER" expressionLanguage="SQL">
+      <formula>100</formula>
+    </measure>
+  </calculatedMeasures>
   <restrictedMeasures/>
+
+  <localDimensions/>
 </logicalModel>
 <layout>
   <shapes>
