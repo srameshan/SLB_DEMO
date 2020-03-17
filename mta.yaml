@@ -22,6 +22,36 @@ modules:
                           
 
 
+
+ - name: SLBHDB2
+   type: hdb
+   path: SLBHDB2
+   requires:
+    - name: hdi_SLBHDB2
+      properties:
+        TARGET_CONTAINER: ~{hdi-container-name_2}
+
+
+
+    - name: cross-container-service-2
+      group: SERVICE_REPLACEMENTS
+
+      properties:
+        key: ServiceName_1
+        service: ~{the-service-name}
+                          
+
+
+
+    - name: cross-container-service-3
+      group: SERVICE_REPLACEMENTS
+
+      properties:
+        key: ServiceName_2
+        service: ~{the-service-name}
+                          
+
+
 resources:
  - name: hdi_SLBHDB
    parameters:
@@ -32,6 +62,31 @@ resources:
    type: com.sap.xs.hdi-container
 
  - name: cross-container-service-1
+   parameters:
+      service-name: SFLIGHT
+   properties:
+      the-service-name: ${service-name}
+   type: org.cloudfoundry.existing-service
+
+
+ - name: hdi_SLBHDB2
+   parameters:
+      config:
+         schema: SLDB2
+   properties:
+      hdi-container-name_2: ${service-name}
+   type: com.sap.xs.hdi-container
+
+
+ - name: cross-container-service-2
+   parameters:
+      service-name: hdi_SLBHDB
+   properties:
+      the-service-name: ${service-name}
+   type: org.cloudfoundry.existing-service
+
+
+ - name: cross-container-service-3
    parameters:
       service-name: SFLIGHT
    properties:

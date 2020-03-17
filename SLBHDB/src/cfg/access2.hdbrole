@@ -1,9 +1,9 @@
 {
   "role":{
-        "name":"SLB_DEMO.SLBHDB.cfg::access",
+        "name":"SLB_DEMO.SLBHDB.cfg::access#",
         "schema_privileges":[
              {
-                "privileges":["SELECT"]
+                "privileges":["SELECT", "CREATE OBJECT STRUCTURED PRIVILEGE"]
              }
              
             ],

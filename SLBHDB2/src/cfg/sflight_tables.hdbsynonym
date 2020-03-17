@@ -1,0 +1,68 @@
+{
+  "SLB_DEMO.SLBHDB2.cfg::DIM": {
+    "target": {
+      "object": "DIM",
+      "schema": "SFLIGHT"
+    }
+  },
+  "SLB_DEMO.SLBHDB2.cfg::FACTS": {
+    "target": {
+      "object": "FACTS",
+      "schema": "SFLIGHT"
+    }
+  },
+  "SLB_DEMO.SLBHDB2.cfg::PC_FACT": {
+    "target": {
+      "object": "PC_FACT",
+      "schema": "SFLIGHT"
+    }
+  },
+  "SLB_DEMO.SLBHDB2.cfg::SAIRPORT": {
+    "target": {
+      "object": "SAIRPORT",
+      "schema": "SFLIGHT"
+    }
+  },
+  "SLB_DEMO.SLBHDB2.cfg::SBOOK": {
+    "target": {
+      "object": "SBOOK",
+      "schema": "SFLIGHT"
+    }
+  },
+  "SLB_DEMO.SLBHDB2.cfg::SCARR": {
+    "target": {
+      "object": "SCARR",
+      "schema": "SFLIGHT"
+    }
+  },
+  "SLB_DEMO.SLBHDB2.cfg::SCUSTOM": {
+    "target": {
+      "object": "SCUSTOM",
+      "schema": "SFLIGHT"
+    }
+  },
+  "SLB_DEMO.SLBHDB2.cfg::SFLIGHT": {
+    "target": {
+      "object": "SFLIGHT",
+      "schema": "SFLIGHT"
+    }
+  },
+  "SLB_DEMO.SLBHDB2.cfg::SPFLI": {
+    "target": {
+      "object": "SPFLI",
+      "schema": "SFLIGHT"
+    }
+  },
+  "SLB_DEMO.SLBHDB2.cfg::STRAVELAG": {
+    "target": {
+      "object": "STRAVELAG",
+      "schema": "SFLIGHT"
+    }
+  },
+  "SLB_DEMO.SLBHDB2.cfg::TEAMLOGON": {
+    "target": {
+      "object": "TEAMLOGON",
+      "schema": "SFLIGHT"
+    }
+  }
+}

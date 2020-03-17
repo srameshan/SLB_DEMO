@@ -1,0 +1,12 @@
+{
+  "role":{
+        "name":"SLB_DEMO.SLBHDB2.cfg::access",
+        "schema_privileges":[
+             {
+                "privileges":["SELECT"]
+             }
+             
+            ]
+       
+        }
+    }  

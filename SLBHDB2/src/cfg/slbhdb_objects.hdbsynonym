@@ -1,0 +1,8 @@
+{
+  "SLB_DEMO.SLBHDB2.cfg::SL_CV1": {
+    "target": {
+      "object": "SLB_DEMO.SLBHDB.models::SL_CV1",
+      "schema": "SLDB"
+    }
+  }
+}
